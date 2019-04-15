@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chaos-Feel The Beats</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/menu.css">
+	<link rel="stylesheet" type="text/css" href="./css/register.css">
+</head>
+<body>
+		<section class="menu">
+				<button class="menu-button">
+						<div class="menu-bar"></div>
+						<div class="menu-bar"></div>
+						<div class="menu-bar"></div>
+						</button>
+						<nav id="menu">
+						<ul class="menu-nav">
+								<li><a href="/">Home</a></li>
+								<li><a href="/register">Register</a></li>
+						</ul>
+				</nav>
+		</section>
+	<div class="registered-message-container">
+		<div class="registered-message">
+			<div class="registered-name"></div>
+			<div class="successful">You are Registered Successfully.</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="nimbus-info">
+			<div>Chaos-Feel The Beats</div>
+			<div>29th - 31st April</div>
+		</div>
+	  <div class="form-wrapper">
+	    <div class="form-heading">Registration Form</div>
+	    <div class="form-content">
+	      <form name="registration-form" class="register-form" method="POST" action="/adduser">
+	        <input class="textfieldInput" type="text" id="fname" name="fname" placeholder="Name*" title="Please Fill the Field"/>
+	        <input class="textfieldInput" type="text" id="email" name="email" placeholder="Email*"  title="Please Fill the Field"/>
+	        <input class="textfieldInput" type="text" id="city" name="city" placeholder="City*"  title="Please Fill the Field"/>
+	        <input class="textfieldInput" type="number" id="phone" name="phone" placeholder="Phone Number*"   title="Please Fill the Field"/>
+	        <!-- <div class="year-container">
+	          <div class="radio-label">Year you study in:</div>
+
+	          <ul>
+	            <li>
+	              <input type="radio" id="first" name="year" value="1" >
+	              <label for="first">1st</label>
+
+	              <div class="check"></div>
+	            </li>
+
+	            <li>
+	              <input type="radio" id="second" name="year" value="2">
+	              <label for="second">2nd</label>
+
+	              <div class="check">
+	                <div class="inside"></div>
+	              </div>
+	            </li>
+
+	            <li>
+	              <input type="radio" id="third" name="year" value="3">
+	              <label for="third">3th</label>
+
+	              <div class="check">
+	                <div class="inside"></div>
+	              </div>
+	            </li>
+	            <li>
+	              <input type="radio" id="fourth" name="year" value="4">
+	              <label for="fourth">4th</label>
+
+	              <div class="check"></div>
+	            </li>
+	            <li>
+	              <input type="radio" id="fifth" name="year" value="5">
+	              <label for="fifth">5th</label>
+
+	              <div class="check"></div>
+	            </li>
+	            <li>
+	              <input type="radio" id="na" name="year" value="0">
+	              <label for="na">NA</label>
+
+	              <div class="check"></div>
+	            </li>
+	            
+	          </ul>
+	        </div> -->
+	        <div id="error-message"></div>
+	        <input id="submit-button" type="submit" value="Register" class="reg">
+	        
+				</form>
+				
+	    </div>
+	  </div>
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/navbar.js"></script>
+	<script src="js/lib/tweenMax.js"></script>
+	<script type="text/javascript" src="./js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
+@import url('https://fonts.googleapis.com/css?family=Teko');
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     background-color: transparent;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background: #082c4c;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
+.nimbus-info{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.nimbus-info div:first-child{
+  font-family: Teko;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.nimbus-info div:last-child{
+  font-size: 1.6rem;
+  font-family: Open Sans;
+}
+.form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.form-heading {
+  font-size: 2rem;
+  font-family: Open Sans;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+.form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.register-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.textfieldInput {
+  background: transparent;
+  font-size: 17px;
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 9px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  color: #fff;
+  font-family: Open Sans;
+}
+
+#submit-button {
+  padding: 10px 35px;
+  font-size: 18px;
+  outline: none;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: Montserrat;
+  cursor: pointer;
+}
+
+#policy{
+  padding: 10px 35px;
+  font-size: 18px;
+  outline: none;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-family: Montserrat;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.year-container {
+  width: 100%;
+  font-family: Open Sans;
+  margin-bottom: 40px;
+}
+.year-container .radio-label {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+.year-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+.year-container ul li {
+  color: #aaaaaa;
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #333;
+}
+.year-container ul li input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+}
+.year-container ul li label {
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.05em;
+  padding: 20px 25px 25px 80px;
+  margin: 10px auto;
+  height: 30px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+.year-container ul li:hover label {
+  color: #ffffff;
+}
+.year-container ul li .check {
+  display: block;
+  position: absolute;
+  border: 5px solid #aaaaaa;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  top: 30px;
+  left: 20px;
+  z-index: 5;
+  -o-transition: border 0.25s linear;
+  transition: border 0.25s linear;
+  -webkit-transition: border 0.25s linear;
+}
+.year-container ul li .check::before {
+  display: block;
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+  top: 1.5px;
+  left: 1.5px;
+  margin: auto;
+  -o-transition: background 0.25s linear;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+.year-container ul li:hover .check {
+  border: 5px solid #ffffff;
+}
+
+input[type="radio"]:checked ~ .check {
+  border: 5px solid #0dff92;
+}
+
+input[type="radio"]:checked ~ .check::before {
+  background: #0dff92;
+}
+
+input[type="radio"]:checked ~ label {
+  color: #0dff92;
+}
+
+@media (max-width: 888px) {
+  .form-content {
+    width: 90%;
+  }
+}
+#error-message{
+  color:Red;
+  font-size: 20px;
+  font-family: Open Sans;
+  margin-bottom: 20px;
+}
+.registered-message{
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  position: fixed;
+  background-color: #082c4c;
+  top:50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+}
+.successful{
+  font-size: 40px;
+  color: #ddd;
+  font-family: Open Sans;
+}
+.registered-name{
+  font-size: 40px;
+  font-family: Montserrat;
+  color: #eee;
+}
